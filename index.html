@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- & ===================> Google font <===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- & ===================> bootstrap <===================== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- & ===================> fontAwesome <===================== -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- & ===================> main style  <===================== -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="main_title text-center mt-5 ">
+                <h1>Bookmark</h1>
+            </div>
+            <div class="dot"></div>
+            <div class="favorite_site">
+                <div class="title d-flex justify-content-center align-items-center ">
+                    <i class="fa-solid fa-bookmark me-2 fs-3"></i>
+                    <h2>Bookmark your favorite sites</h2>
+                    <i class="fa-solid fa-bookmark ms-2 fs-3"></i>
+                </div>
+                <div class="row">
+                    <label for="site"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+                    <input type="text" name="site" class="form-control col-12 mt-2" id="site-Name">
+                    <label for="site"><i class="fa-solid fa-link me-2 mt-4"></i>Site Url</label>
+                    <input type="text" name="site" class="form-control mt-2" id="site-Url" >
+                    <button class="btn btn-submit col-2 m-auto mt-4 " id="submit" onclick="createTable()">submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="table-container mt-3 ">
+        <div class="container">
+            <div class="row">
+                <table class="table">
+                    <thead class="table-light">
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="table_body">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="" target="_blank"></a>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>

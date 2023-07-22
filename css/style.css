@@ -1,0 +1,63 @@
+body{
+    background-color: #f7ecde;
+}
+.main_title h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    line-height: 70px;
+    position: relative;
+    letter-spacing: 6px;
+}
+.main_title h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 1s ease;
+    z-index: -1;
+}
+.main_title h1:hover::after{
+    height: 40px;
+}
+.main_title {
+    width: fit-content;
+    margin: auto;
+}
+.dot{
+    position: relative;
+}
+.dot::after{
+    content: '';
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px dotted #000;
+    position: absolute;
+    top: 0;
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #bb4120;
+    padding: 8px 15px;
+}
+.btn-submit:hover{
+    color: #fff;
+    background-color:#d2512e ;
+}
+.favorite_site .title{
+    margin-top: 80px;
+
+}
+.favorite_site .title i,h2{
+    background: linear-gradient( #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::selection{
+    background-color: #fec260;
+    color: #352e28;
+}
